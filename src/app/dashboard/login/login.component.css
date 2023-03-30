@@ -1,0 +1,27 @@
+.form-box{
+
+    height: 380px;
+    width:400px;
+    background-color: bisque;
+    padding: 25px;
+    margin-left: 450px;
+    margin-top:180px;
+}
+
+.form-box h3{
+
+    text-align: center;
+
+
+}
+
+.form-box button{
+    
+    margin-left: 130px;    
+
+}
+
+.form-box p{
+
+    text-align: center;
+}

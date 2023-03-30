@@ -1,0 +1,23 @@
+<div class="container">
+    <button class="btn btn-primary" routerLink="/sliderform">Add New Image</button>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Actions</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let sld of slide">
+                    <th scope="row">{{sld.id}}</th>
+                    <td><img src={{sld.slideimg}} style="height: 100px;"></td>
+                    <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;
+                        <i class="fa-solid fa-trash" (click)="deletesliderimage(sld.id)"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

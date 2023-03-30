@@ -1,0 +1,24 @@
+<div class="container">
+<form [formGroup]="registerform" class="form1-box">
+
+
+    <h4>Register Here</h4>
+    <label for="exampleInputName" class="form-label">Enter your Username</label><br>
+    <input type="name" class="form-control" id="exampleInputName" formControlName="name">
+
+    <label for="exampleInputEmail" class="form-label">Enter your Email</label><br>
+    <input type="email" class="form-control" id="exampleInputEmail" formControlName="email">
+
+    <label for="exampleInputNumber" class="form-label">Enter your Mobile No.</label><br>
+    <input type="number" class="form-control" id="exampleInputNumber" formControlName="number">
+
+    <label for="exampleInputPassword" class="form-label">Enter your Password</label><br>
+    <input type="password" class="form-control" id="exampleInputPassword" formControlName="password">
+
+    <label for="exampleInputPassword" class="form-label">Confirm your Password</label><br>
+    <input type="password" class="form-control" id="exampleInputPassword" formControlName="password2"><br>
+
+
+  <button type="submit" class="btn btn-primary" (click)="userregister()">Register</button>
+</form>
+</div>

@@ -1,0 +1,7 @@
+<form class="form1" [formGroup]="post">
+    <div class="form-group">
+      <label for="exampleInputImage">Choose Image</label>
+      <input type="file" class="form-control" id="exampleInputFile" formControlName="slideimg">
+    </div>
+    <button type="submit" class="btn btn-primary" routerLink="/dashboard/home" (click)="postslider()">Upload</button>
+</form>

@@ -1,0 +1,28 @@
+.form1-box {
+
+
+    height: 490px;
+    width:400px;
+    margin-left:370px;
+    margin-top:40px;
+    /* margin-bottom: 200px; */
+    padding:25px;
+    background-color: bisque;
+
+}
+
+.form1-box h4 {
+
+    text-align: center;
+}
+.form1-box button{
+
+    margin-left: 130px;
+
+
+}
+
+.container{
+
+    height: 300px;
+}

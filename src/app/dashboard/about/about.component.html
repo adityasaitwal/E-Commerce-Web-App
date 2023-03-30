@@ -1,0 +1,31 @@
+<div class="table-responsive">
+
+    <button class="btn btn-primary" routerLink="/aboutform">Add Section</button>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Image</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let ab of aboutprod">
+                <th scope="row">{{ab.id}}</th>
+                <td>{{ab.title}}</td>
+                <td>{{ab.description}}</td>
+                <td><img src={{ab.img}} style="height: 100px;"></td>
+                <td><i class="fa-solid fa-pen-to-square" routerLink="/update/{{ab.id}}"></i>&nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-trash" (click)="deleteaboutdata(ab.id)"></i>
+                </td>
+
+            </tr>
+
+            
+        </tbody>
+    </table>
+</div>

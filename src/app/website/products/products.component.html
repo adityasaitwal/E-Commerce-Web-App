@@ -1,0 +1,20 @@
+<div class="row" *ngFor="let card of cardproduct">
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src={{card.productimage}} class="card-img-top" alt="AppleIphone14">
+            <div class="card-body">
+                <h2 class="card-title">{{card.productname}}</h2>
+                 <p class="card-text">{{card.productdescription}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+
+                <li class="list-group-item"><h4>Price</h4>{{card.productprice}}</li>
+                <li class="list-group-item"><h4>Items in Stock</h4>{{card.productstock}}</li>
+            </ul>
+            <div class="card-body">
+                <button class="btn btn-primary" routerLink="/cart">AddToCart&nbsp;<i class="fa-solid fa-cart-shopping"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary">Buy Now &nbsp;<i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

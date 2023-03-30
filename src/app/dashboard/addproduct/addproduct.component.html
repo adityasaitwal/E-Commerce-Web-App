@@ -1,0 +1,37 @@
+<form [formGroup]="postform" class="add">
+    <div class="form-group">
+        <label for="exampleInputName">Enter Product Name</label>
+        <input type="name" class="form-control" id="exampleInputName" formControlName="productname">
+        <span style="color: red;" *ngIf="productname && productname.invalid && productname.touched">Product Name is
+            required</span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputText">Enter Product Description</label>
+        <input type="text" class="form-control" id="exampleInputText" formControlName="productdescription">
+        <span style="color: red;"
+            *ngIf="productdescription && productdescription.invalid && productdescription.touched">Product Description
+            is required</span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputNumber">Enter Product Price</label>
+        <input type="number" class="form-control" id="exampleInputNumber" formControlName="productprice">
+        <span style="color: red;" *ngIf="productprice && productprice.invalid && productprice.touched">Product Price is
+            required</span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputName">Enter Product Stock</label>
+        <input type="name" class="form-control" id="exampleInputNumber" formControlName="productstock">
+        <span style="color: red;" *ngIf="productstock && productstock.invalid && productstock.touched">Product Stock is
+            required</span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">Choose Image</label>
+        <img [src] = imgurl  style="height: 100px;">
+        <input type="file" (change)="onFileSelected($event)" class="form-control" id="exampleInputFile"
+            formControlName="productimage">
+        <span style="color: red;" *ngIf="productimage && productimage.invalid && productimage.touched">Product Image is
+            required</span>
+    </div>
+    <button type="submit" [disabled]="postform.invalid" class="btn btn-primary" routerLink="/productlist"
+    (click)="addpro()">Submit</button>
+</form>

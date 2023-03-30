@@ -1,0 +1,26 @@
+.navbar{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: block;
+    height:100vh;
+    width: 200px;
+    background-color: blue;
+    margin-top:0px;
+}
+
+.navbar ul li{
+
+    display: block;
+    padding: 20px;
+
+}
+
+.navbar ul li a{
+
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: medium;
+
+}

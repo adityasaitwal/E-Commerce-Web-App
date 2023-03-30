@@ -1,0 +1,15 @@
+<div class="container">
+  <form [formGroup]="loginform" class="form-box">
+
+    <h3>Login to your Account</h3><br>
+    <label for="exampleInputEmail" class="form-label">Enter your Email</label><br>
+    <input type="email" class="form-control" id="exampleInputEmail" formControlName="email"><br>
+
+    <label for="exampleInputPassword" class="form-label">Enter your Password</label><br>
+    <input type="password" class="form-control" id="exampleInputPassword" formControlName="password"><br>
+
+    <button type="submit" class="btn btn-primary" (click)="userlogin()">Login</button><br><br>
+
+    <p>Not an User? &nbsp;<a class="link" routerLink="/register">SignUp Here</a></p>
+  </form>
+</div>

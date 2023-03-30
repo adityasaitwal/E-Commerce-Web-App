@@ -1,0 +1,17 @@
+.row{
+
+    margin-top:50px;
+    margin-left:100px;
+    display: inline-block;
+}
+
+.card {
+
+    border: 1px solid black;
+
+}
+
+.btn {
+
+    display: inline-block;
+}

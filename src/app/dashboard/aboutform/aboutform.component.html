@@ -1,0 +1,20 @@
+<div class="container">
+  <form [formGroup]="postab">
+    <div class="form-group">
+      <label for="exampleInputName">Enter Title</label>
+      <input type="name" class="form-control" id="exampleInputName" formControlName="title"><br>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputText">Enter Description</label>
+      <input type="text" class="form-control" id="exampleInputText" formControlName="description"><br>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputFile">Choose Image</label>
+      <input type="file" class="form-control" id="exampleInputFile" formControlName="img">
+    </div>
+
+    <button type="submit" class="btn btn-primary" routerLink="/about" (click)="postaboutdata()">Submit</button>
+  </form>
+</div>

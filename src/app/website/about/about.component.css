@@ -1,0 +1,16 @@
+.container{
+
+    padding:30px;
+    margin-left: 30px;
+}
+
+.col-6{
+
+    text-align:justify;
+}
+
+.col-6 img{
+
+    height:320px;
+    width:700px;
+}

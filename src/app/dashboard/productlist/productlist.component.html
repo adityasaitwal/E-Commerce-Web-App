@@ -1,0 +1,32 @@
+<div class="container">
+    <button class="btn btn-primary" routerLink="/addproduct">Add Product</button>
+    <h2>Available Products</h2>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Product Id</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Product Description</th>
+                    <th scope="col">Product Price</th>
+                    <th scope="col">Product Stock</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let prod of product">
+                    <th scope="row">{{prod.id}}</th>
+                    <td>{{prod.productname}}</td>
+                    <td>{{prod.productdescription}}</td>
+                    <td>{{prod.productprice}}</td>
+                    <td>{{prod.productstock}}</td>
+                    <td><img class="media-object" [src]="sanitizer.bypassSecurityTrustResourceUrl(prod.productimage)" style="height: 50px;"></td>
+                    <td><a><i class="fa-solid fa-pen-to-square" routerLink="/updatedata/{{prod.id}}"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a><i class="fa-solid fa-trash" (click)="deleteitem(prod.id)"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<h1>Items in your Cart</h1>
+<div class="row" *ngFor="let ci of cartitem">
+    <div class="col-4">
+
+        <h4>Product Name</h4>
+        <p>{{ci.itemname}}</p>
+        <h4>Description</h4>
+        <p>{{ci.itemdescription}}</p>
+        <h4>Product Price</h4>
+        <p>{{ci.itemprice}}</p>
+
+    </div>
+
+    <div class="col-4">
+
+        <h4>In Stock</h4>
+        <p>{{ci.itemstock}}</p>
+        <h4>Available Items</h4>
+        <p>{{ci.availableitems}}</p>
+        <h4>Delivery On</h4>
+        <p>{{ci.deliverdate}}</p>
+
+    </div>
+
+    <div class="col-4">
+
+        <img src="/assets/images/cardimage1.jpg" style="height: 250px;">
+
+
+    </div>
+    <button class="btn btn-primary">Remove from Cart &nbsp;<i class="fa-solid fa-xmark"></i></button>
+    <button class="btn btn-primary">Proceed to Pay &nbsp;<i class="fa-solid fa-credit-card"></i></button>
+</div>
