@@ -1,1 +1,1 @@
-E-Commerce Website with Admin Panel
+E-Commerce Web Application with Admin Panel
